@@ -28,26 +28,26 @@
         <div class="mx-0 mb-0 p-0" style="margin-top:-8.995px !important">
             <?php /*if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )):*/ ?>
                 <div <?php if(has_header_image()) { ?>class="wp-fseg-banniere" style="background-image: url('<?php header_image(); ?>');" <?php } ?>>
-<!--                    <div class="container">-->
-<!--                        <h2 class="titre-page">-->
-<!--                            --><?php
-//                            if(get_theme_mod( 'header_banner_title_setting' )){
-//                                echo get_theme_mod( 'header_banner_title_setting' );
-//                            }else{
-//                                echo 'FSEG';
-//                            }
-//                            ?>
-<!--                        </h2>-->
-<!--                        <h2 class="soustitre-page">-->
-<!--                            --><?php
-//                            if(get_theme_mod( 'header_banner_tagline_setting' )){
-//                                echo get_theme_mod( 'header_banner_tagline_setting' );
-//                            }else{
-//                                echo esc_html__('Faculté des Sciences Économiques et de Gestion','fseg-theme');
-//                            }
-//                            ?>
-<!--                        </h2>-->
-<!--                    </div>-->
+                   <div class="container">
+                        <h2 class="titre-page text-dark">
+                            <?php
+                            if(get_theme_mod( 'header_banner_title_setting' )){
+                                echo get_theme_mod( 'header_banner_title_setting' );
+                           }else{
+                                echo 'FSEG';
+                            }
+                            ?>
+                        </h2>
+                        <h2 class="soustitre-page text-dark">
+                            <?php
+                            if(get_theme_mod( 'header_banner_tagline_setting' )){
+                                echo get_theme_mod( 'header_banner_tagline_setting' );
+                            }else{
+                                echo esc_html__('Faculté des Sciences Économiques et de Gestion','fseg-theme');
+                            }
+                            ?>
+                        </h2>
+                    </div>
                 </div>
             <?php //endif; ?>
             <nav class="navbar navbar-expand-xl p-0 px-3">
